@@ -1,0 +1,26 @@
+diff --git a/dist/index.cjs b/dist/index.cjs
+index 0502091da779d3ea9083892dc1fc4d4ee3d105a4..a05dd8ab4ad183b791b794be52147fbe53bdf27c 100644
+--- a/dist/index.cjs
++++ b/dist/index.cjs
+@@ -2957,7 +2957,7 @@ function vuePlugin(rawOptions = {}) {
+       if (query.raw || query.url) {
+         return;
+       }
+-      if (!filter.value(filename) && !query.vue) {
++      if (!filter.value(filename)) {
+         return;
+       }
+       if (!query.vue) {
+diff --git a/dist/index.mjs b/dist/index.mjs
+index cb0c9c6ae2faffbdf8e4edccdf752b3dcc8694d6..bad51f7794ef80fe4baa6da2d0842002f92aac20 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -2945,7 +2945,7 @@ function vuePlugin(rawOptions = {}) {
+       if (query.raw || query.url) {
+         return;
+       }
+-      if (!filter.value(filename) && !query.vue) {
++      if (!filter.value(filename)) {
+         return;
+       }
+       if (!query.vue) {
